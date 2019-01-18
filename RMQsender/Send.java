@@ -8,7 +8,7 @@ public class Send {
     private final static String QUEUE_NAME = "hello";
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost("02267-munich.compute.dtu.dk");
         try (Connection connection = factory.newConnection();
             Channel channel = connection.createChannel()) {
             channel.queueDeclare(QUEUE_NAME, false, false, false, null);

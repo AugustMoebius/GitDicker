@@ -9,7 +9,7 @@ public class Recv {
 
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost("02267-munich.compute.dtu.dk");
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
 
